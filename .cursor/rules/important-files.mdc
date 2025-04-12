@@ -3,7 +3,7 @@ description:
 globs: 
 alwaysApply: true
 ---
- ---
+---
 globs: **/**
 alwaysApply: true
 ---
@@ -14,6 +14,14 @@ alwaysApply: true
 - `package.json`: NPM package configuration with scripts and dependencies
 - `tsconfig.json`: TypeScript configuration
 - `src/main.ts`: Main entry point for the MCP server
+- `src/github-functions/base.ts`: Base GitHub functionality including Octokit initialization
+- `src/github-functions/issues.ts`: GitHub API functions for issues
+- `src/github-functions/pull-requests.ts`: GitHub API functions for pull requests
+- `src/github-functions/index.ts`: Export file for GitHub functions
+- `src/tools/issues.ts`: MCP server tools for GitHub issues
+- `src/tools/pull-requests.ts`: MCP server tools for GitHub pull requests
+- `src/tools/index.ts`: Export file for MCP tools
+- `.env`: Environment variables for GitHub authentication (not committed to git)
 - `.gitignore`: Specifies intentionally untracked files to ignore
 
 Note: When adding new important files to the project, please add them to this list.

@@ -1,0 +1,23 @@
+## Problem
+
+I want to be able to check the status of actions on the MCP server.
+
+## Supporting Information
+
+Always ensure that `page` and `per_page` are included in the request parameters, even if the API doesn't require them.
+
+## Steps To Complete
+
+- Look at the existing implementations of functions and tools in the correct directory. Load them into your context window.
+
+- Add functions to:
+
+  - List the actions in a repository.
+  - Get the status of an action.
+  - Get the details of an action.
+  - Cancel an action.
+  - Retry an action.
+
+- Add those functions as tools to the MCP server.
+
+- Ensure that all major files are added to the `.cursor/rules/important-files.mdc` file.

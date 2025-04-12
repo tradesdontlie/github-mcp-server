@@ -1,0 +1,20 @@
+## Problem
+
+The files are getting a bit too big. We want to break them up into smaller chunks to make them easier for the Cursor agent to understand.
+
+## Supporting Information
+
+We have two concepts in the repo: `tools` and `github-functions`.
+
+- `github-functions` are the way that we connect to GitHub
+- `tools` are the things that get attached to the MCP server. `tools` contain `github-functions`.
+
+We want to break up the large files we have into smaller chunks, using a file structure which reflects the relationship between `tools` and `github-functions`.
+
+## Steps To Complete
+
+- Break up the large files into smaller chunks, using the file structure above.
+
+- Each file may contain multiple `github-functions` or `tools`, but they should be split by domain.
+
+- Ensure that all major files are added to the `.cursor/rules/important-files.mdc` file.
