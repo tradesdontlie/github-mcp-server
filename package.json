@@ -1,5 +1,5 @@
 {
-  "name": "mcp-server",
+  "name": "github-mcp-server",
   "version": "1.0.0",
   "description": "MCP server written in TypeScript",
   "type": "module",
