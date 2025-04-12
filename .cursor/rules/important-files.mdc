@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ ---
+globs: **/**
+alwaysApply: true
+---
+
+# Important Files
+
+- `.cursor/rules/important-files.mdc`: Lists all important files for the project
+- `package.json`: NPM package configuration with scripts and dependencies
+- `tsconfig.json`: TypeScript configuration
+- `src/main.ts`: Main entry point for the MCP server
+- `.gitignore`: Specifies intentionally untracked files to ignore
+
+Note: When adding new important files to the project, please add them to this list.
