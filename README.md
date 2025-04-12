@@ -1,68 +1,30 @@
 # GitHub MCP Server
 
-A Model Context Protocol (MCP) server for GitHub integrations, built with TypeScript and Express.
+A Model Context Protocol (MCP) server that provides tools for managing GitHub repositories and task management.
 
 ## Features
 
-- SSE (Server-Sent Events) transport for real-time communication
-- GitHub API integration using Octokit
-- Tool support for GitHub issues and pull requests
+### GitHub Integration
+- Create and manage issues
+- Handle pull requests
+- Work with repositories
 
-## Getting Started
+### Task Management
+- Create and organize tasks with priorities
+- Track dependencies between tasks
+- Mark tasks as complete
+- Get the next highest priority task to work on
 
-### Prerequisites
+## Recent Updates
+- Fixed dependency handling in the getNextTask function
+- Improved task parsing for better reliability
+- Added robust error handling
 
-- Node.js 18+ 
-- pnpm (or npm/yarn)
-- GitHub Personal Access Token
+## Setup
+1. Clone this repository
+2. Install dependencies with `npm install` or `pnpm install`
+3. Set up your GitHub token in the `.env` file
+4. Run the server with `npm start`
 
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/github-mcp-server.git
-cd github-mcp-server
-```
-
-2. Install dependencies
-```bash
-pnpm install
-```
-
-3. Set up environment variables
-Create a `.env` file in the root directory:
-```
-GITHUB_TOKEN=your_github_personal_access_token
-PORT=8080
-```
-
-### Running the Server
-
-Development mode:
-```bash
-pnpm dev
-```
-
-Build and run in production:
-```bash
-pnpm build
-pnpm start
-```
-
-## Usage
-
-Connect to the SSE endpoint at `http://localhost:8080/sse` to establish a connection.
-Send messages to `http://localhost:8080/messages`.
-
-## Available Tools
-
-- GitHub Issues: `getIssue`, `createIssueComment`, `updateIssue`, `listIssues`
-- GitHub Pull Requests: `getPullRequest`, `createPullRequestComment`, `updatePullRequest`, `listPullRequests`
-
-## License
-
-MIT
-
-## Acknowledgments
-
-Built with [Model Context Protocol SDK](https://github.com/modelcontextprotocol/sdk) 
+## Documentation
+See the `docs` directory for detailed information on each feature.
